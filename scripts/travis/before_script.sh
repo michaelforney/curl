@@ -184,6 +184,7 @@ if [ $TRAVIS_OS_NAME = linux ]; then
       cd bearssl-0.6
       make
     fi
+    cd $HOME/bearssl-0.6
     sudo cp inc/*.h /usr/local/include
     sudo cp build/libbearssl.* /usr/local/lib
   fi
